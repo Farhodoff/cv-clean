@@ -87,11 +87,11 @@ export function ExperienceSection({ currentLanguage }: ExperienceSectionProps) {
           {experiences.map((exp, idx) => (
             <div
               key={idx}
-              className={`group relative mb-12 md:mb-16 transition-all duration-500 ${
+              className={`group relative mb-12 md:mb-16 ${
                 isVisible ? "animate-slide-up" : "opacity-0 translate-y-10"
               }`}
               style={{
-                animationDelay: isVisible ? `${(idx + 1) * 150}ms` : "0ms",
+                animationDelay: isVisible ? `${(idx + 1) * 200}ms` : "0ms",
               }}
             >
               {/* Timeline dot */}
